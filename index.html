@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/CSS/index.css">
@@ -28,23 +29,43 @@
 
    <div class="po">
  <img class="per" src="/img/personagens praiana.png" alt="">
+  <img src="" alt="">
    </div>
    
    <button onclick="tocarMusica()">Tocar Música</button>
 
    <div class="container">
-    <div class="card loopcolor">
-        <div class="musica-top">
-   
-             <img class="capa" src="/img/capa praiana.png" alt="">
-           
-             <div class="info">
-             <h3>PRAIANA</h3>
-            <p>DJXOXO E KIRA</p>
-             </div>
+   <div class="card loopcolor">
 
+    <div class="musica-top">
+
+        <img class="capa" src="/img/capa praiana.png" alt="">
+
+        <div class="info">
+            <h3>PRAIANA</h3>
+            <p class="nag">DJ XOXO AND KIRA</p>
+            <p class="Sunset">Sunset Vibes</p>
         </div>
+
+    </div> <!-- FECHA AQUI -->
+
+    <div class="progress-area">
+        <span id="current">0:00</span>
+
+        <input type="range" id="progress" value="0">
+
+        <span id="duration">0:00</span>
     </div>
+
+    <div class="controls">
+        <button class="playy" id="prev"><i class="fa-solid fa-angles-left"></i></button>
+        <button class="playy" id="play"><i class="fa-solid fa-play"></i></button>
+        <button class="playy" id="next"><i class="fa-solid fa-angles-right"></i></button>
+    </div>
+
+    <audio id="audio" src=""></audio>
+
+</div>
    </div>
 
 
